@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Weather API</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="min-container">
+                <div class="searchbar-container">
+                    <div class="location">
+                        <img src="css/folder/location (3).png">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="userVal"
+                            placeholder="Enter Your location">
+                    </div>
+                    <button class="search-btn" id="search-btn"><img
+                            src="css/folder/magnifying-glass.png"></button>
+                </div>
+                <div class="details-container">
+                    <div class="set-details">
+                        <div class="icon">
+                            <img src="css/folder/cloud (2).png">
+                        </div>
+                        <div class="coloumn ml-6">
+                            <div id="clouds">00%
+                            </div>
+                            <div class="small-text">Clouds</div>
+                        </div>
+                    </div>
+                    <div class="set-details">
+                        <div class="icon">
+                            <img src="css/folder/wind (1).png">
+                        </div>
+                        <div class="coloumn ml-6">
+                            <div id="windSpeed">00m/s
+                            </div>
+                            <div class="small-text">Wind Speed</div>
+                        </div>
+                    </div>
+                    <div class="set-details">
+                        <div class="icon">
+                            <img src="css/folder/humidity (1).png">
+                        </div>
+                        <div class="coloumn ml-6">
+                            <div id="humadity">00%
+                            </div>
+                            <div class="small-text">Humadity</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="temperature-contaier">
+                    <div class="icon">
+                        <img id="temp-icon" src="css/temp-icon/cold.png">
+                    </div>
+                    <div class="temperature">
+                        00
+                    </div>
+                    <div class="units">&deg; C
+                        <div class="up-air">
+                            <div class="set-details">
+                                <div class="icon">
+                                    <img src="css/folder/arrow-small-up.png">
+                                </div>
+                                <div class="coloumn fnt-12px">
+                                    <div id="max-temp">00
+                                    </div>
+
+                                    <div class="small-text">Max-Temp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-air">
+                            <div class="set-details">
+                                <div class="icon">
+                                    <img src="css/folder/arrow-small-down.png">
+                                </div>
+                                <div class="coloumn fnt-12px">
+                                    <div id="min-temp">00
+                                    </div>
+                                    <div class="small-text">Min-Temp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set-details">
+                            <div class="icon">
+                                <img src="css/folder/thermometer-half.png">
+                            </div>
+                            <div class="coloumn fnt-12px">
+                                <div id="feels-like">
+                                    00
+                                </div>
+                                <div class="small-text">Feels Like</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-container">
+                    <div id="country" class="country"></div>
+                    <div class="city"></div>
+                </div>
+                <div class="city-container">
+                    <div class="country" id="weather-type"></div>
+                </div>
+
+                <div class="image-container">
+                    <img id="image" src="css/folder/sun.png">
+                </div>
+
+                <div class="city-container">
+                    <div id="date" class="country"></div>
+                </div>
+
+                <div class="city-container">
+                    <button class="toggle-btn" onclick="abc()">Dark</button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="java/app.js"></script>
+    </body>
+</html>
